@@ -28,5 +28,6 @@ public interface RatingRepository extends JpaRepository<Rating, Long> {
     List<Movie> findTopRated(
             @Param("minVotes") long minVotes,
             Pageable pageable);
-
+    List<Rating> findByMovie_IdOrderByIdDesc(
+            Long movieId, Pageable pageable);
 }

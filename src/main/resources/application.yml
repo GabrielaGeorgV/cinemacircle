@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: cinemacircle
+
+  config:
+    import: "file:./config/secrets.yml"
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+  flyway:
+    enabled: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+  endpoint:
+    health:
+      show-details: never
+
+spring doc:
+  swagger-ui:
+    path: /swagger-ui.html

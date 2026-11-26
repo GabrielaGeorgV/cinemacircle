@@ -1,4 +1,4 @@
-package bg.cinemacircle.service.impl;
+package bg.cinemacircle.service;
 
 import bg.cinemacircle.dto.request.MovieRequest;
 import bg.cinemacircle.dto.request.MovieSearchRequest;

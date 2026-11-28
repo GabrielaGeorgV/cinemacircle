@@ -2,7 +2,9 @@ package bg.cinemacircle.mapper;
 
 import bg.cinemacircle.dto.response.ReviewResponse;
 import bg.cinemacircle.model.Review;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ReviewMapper {
     public ReviewResponse toResponse(Review entity) {
         ReviewResponse dto = new ReviewResponse();

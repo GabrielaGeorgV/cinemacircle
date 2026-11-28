@@ -2,7 +2,9 @@ package bg.cinemacircle.mapper;
 
 import bg.cinemacircle.dto.response.WatchlistItemResponse;
 import bg.cinemacircle.model.WatchlistItem;
+import org.springframework.stereotype.Component;
 
+@Component
 public class WatchlistItemMapper {
     public WatchlistItemResponse toResponse(WatchlistItem entity) {
         WatchlistItemResponse dto = new WatchlistItemResponse();

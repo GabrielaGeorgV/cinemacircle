@@ -2,7 +2,9 @@ package bg.cinemacircle.mapper;
 
 import bg.cinemacircle.dto.response.WatchedMovieResponse;
 import bg.cinemacircle.model.WatchedMovie;
+import org.springframework.stereotype.Component;
 
+@Component
 public class WatchedMovieMapper {
     public WatchedMovieResponse toResponse(WatchedMovie entity) {
         WatchedMovieResponse dto = new WatchedMovieResponse();
